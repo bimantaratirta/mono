@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: CColor.primarySwatch,
         scaffoldBackgroundColor: CColor.white,
         primaryColor: CColor.green,
+        fontFamily: 'Inter',
       ),
       home: const LauncherPage(),
     );
