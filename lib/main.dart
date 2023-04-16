@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'constants/colors.dart';
+import 'pages/launcher.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: CColor.white,
         primaryColor: CColor.green,
       ),
+      home: const LauncherPage(),
     );
   }
 }
