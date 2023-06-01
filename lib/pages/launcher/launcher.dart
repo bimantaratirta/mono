@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../constants/colors.dart';
-import 'onboarding.dart';
+import '../../constants/colors.dart';
+import '../onboarding/onboarding.dart';
 
 class LauncherPage extends StatefulWidget {
   const LauncherPage({super.key});
+  static const String routeName = "/launcher";
 
   @override
   State<LauncherPage> createState() => _LauncherPageState();
@@ -15,7 +16,7 @@ class _LauncherPageState extends State<LauncherPage> {
   @override
   void initState() {
     Future.delayed(const Duration(seconds: 3), () {
-      Get.to(
+      Get.off(
         () => const OnboardingPage(),
         transition: Transition.downToUp,
       );

@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:mono/constants/colors.dart';
 import 'package:mono/constants/sizes.dart';
+import 'package:mono/pages/regist/regist.dart';
 
-import '../constants/gaps.dart';
+import '../../constants/button_style.dart';
+import '../../constants/gaps.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
+  static const String routeName = "/onboarding";
 
   @override
   State<OnboardingPage> createState() => _OnboardingPageState();
@@ -36,14 +40,13 @@ class _OnboardingPageState extends State<OnboardingPage> {
             ),
             VerticalGap.medium,
             ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: CSize.medium,
-                  vertical: CSize.small,
-                ),
-                shape: const StadiumBorder(),
-              ),
+              onPressed: () {
+                Get.off(
+                  () => RegistPage(),
+                  transition: Transition.rightToLeft,
+                );
+              },
+              style: CButtonStyle.rounded,
               child: const Text(
                 "Mulai Sekarang",
                 style: TextStyle(fontWeight: FontWeight.bold),
