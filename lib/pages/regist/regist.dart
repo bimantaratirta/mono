@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:mono/pages/home/home.dart';
 
 import '../../constants/button_style.dart';
 import '../../constants/colors.dart';
@@ -74,7 +76,12 @@ class RegistPage extends StatelessWidget {
               ),
               VerticalGap.small,
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.off(
+                    () => const HomePage(),
+                    transition: Transition.rightToLeft,
+                  );
+                },
                 style: CButtonStyle.rounded,
                 child: const Text(
                   "Lanjut",
