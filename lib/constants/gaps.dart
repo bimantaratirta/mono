@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'sizes.dart';
 
-class CVerticalGap {
+class VerticalGap {
   static const SizedBox xtraSmall = SizedBox(height: CSize.xtraSmall);
   static const SizedBox small = SizedBox(height: CSize.small);
   static const SizedBox regular = SizedBox(height: CSize.regular);
@@ -12,7 +12,7 @@ class CVerticalGap {
   static const SizedBox huge = SizedBox(height: CSize.huge);
 }
 
-class CHorizontalGap {
+class HorizontalGap {
   static const SizedBox xtraSmall = SizedBox(width: CSize.xtraSmall);
   static const SizedBox small = SizedBox(width: CSize.small);
   static const SizedBox regular = SizedBox(width: CSize.regular);
